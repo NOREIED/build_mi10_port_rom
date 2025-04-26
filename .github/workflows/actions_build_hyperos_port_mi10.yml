@@ -62,7 +62,6 @@ jobs:
           cd hyperos_port
           sudo chmod -R a+x . 
           mkdir tmp
-          rclone sync -P onedrive:/ROM_FILES/ tmp/
           mkdir -p devices/umi devices/cmi
           cp -rfv tmp/BT*.zip devices/umi
           cp -rfv tmp/BT*.zip devices/cmi
